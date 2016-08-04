@@ -17,3 +17,8 @@ function calculate() {
       document.calc.result.value="Error";
     }
 }
+
+// Adds special message to the screen
+function message() {
+  
+}
