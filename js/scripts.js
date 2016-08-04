@@ -20,5 +20,10 @@ function calculate() {
 
 // Adds special message to the screen
 function message() {
-  
+  if (document.calc.result.value!=""){
+    document.calc.result.value="clear screen for message!";
+    }
+  else {
+    document.calc.result.value="07734";
+  }
 }
