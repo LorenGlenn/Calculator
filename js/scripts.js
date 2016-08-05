@@ -1,5 +1,5 @@
 // Determines button clicked via id
-function myFunction(id) {
+function display(id) {
   document.calc.result.value+=id;
 }
 
@@ -25,5 +25,19 @@ function message() {
     }
   else {
     document.calc.result.value="07734";
+  }
+}
+
+function reset(){
+  for (i=0; i<10; i++){
+    var num = document.getElementById(i);
+    num.innerHTML = i;
+  }
+}
+
+function scramble(){
+  for (i=0; i<10; i++){
+    var scram = document.getElementById(i);
+    scram.innerHTML = Math.floor(Math.random() * 10);
   }
 }
